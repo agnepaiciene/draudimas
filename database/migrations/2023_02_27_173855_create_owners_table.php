@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('owners', function (Blueprint $table) {
             $table->id();
             $table->string("name", 32);
-            $table->string("surname", 64);
+            $table->string("surname", 32);
             $table->timestamps();
         });
     }
