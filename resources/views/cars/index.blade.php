@@ -39,6 +39,7 @@
                                   <input class="form-control" type="search" id="model" name="model"  value="{{$model}}">
 
                               </div>
+
                               <hr>
                               <div class="mb-3">
                                   <label class="form-label">Registracijos Numeris</label>
