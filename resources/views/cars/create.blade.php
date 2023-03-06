@@ -15,7 +15,9 @@
                             <div class="mb-3">
                                 <label class="form-label">Registracijos numeris</label>
                                 <input type="text" class="form-control" name="reg_number">
-
+                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                    Please provide a valid reg_number
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Markė</label>
@@ -29,7 +31,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Savininkas</label>
+                                <label class="form-label">Savininko Vardas</label>
 
                                 <select name="owner_id" class="form-select">
                                     @foreach($owners as $owner)

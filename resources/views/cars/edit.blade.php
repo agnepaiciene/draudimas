@@ -33,7 +33,7 @@
 
                                 <select name="owner_id" class="form-select">
                                     @foreach($owners as $owner)
-                                        <option value="{{ $owner->id }}"  {{ ($owner->id==$car->$owner_id)?'selected':'' }}>{{ $owner->name }}</option>
+                                        <option value="{{ $owner->id }}" {{ ($owner->id==$car->owner_id)?'selected':'' }}>{{ $owner->name }} {{ $owner->surname }}</option>
                                     @endforeach
                                 </select>
                             </div>

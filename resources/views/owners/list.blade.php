@@ -8,7 +8,36 @@
                     <div class="card-header">Savininkai</div>
 
                     <div class="card-body">
-                        <a href="{{ route("owners.create") }}" class="btn btn-success float-end">Pridėti naują saviniką</a>
+                        <div class="clearfix">
+                          <a href="{{ route("owners.create") }}" class="btn btn-success float-end">Pridėti naują saviniką</a>
+                        </div>
+
+                        <br>
+                         <hr>
+
+                       <form method="post" action="{{route('owners.search')}}">
+                           @csrf
+                         <div class="mb-3">
+                             <label class="form-label"> Vardas</label>
+                             <input class="form-control" type="search" id="surname" name="name" placeholder="ieškokite pagal vardą" value="{{$name}}">
+                         </div>
+                           <button class="btn btn-info">Ieškoti</button>
+
+
+                        <hr>
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Pavardė</label>
+                                <input class="form-control" type="search" id="surname" name="surname" placeholder="ieškokite pagal pavardę" value="{{$surname}}">
+
+                            </div>
+                            <button class=" btn btn-info">Ieškoti</button>
+                        </form>
+
+
+                       <hr>
+
                         <table class="table">
                             <thead>
                             <tr class="fs-4">
